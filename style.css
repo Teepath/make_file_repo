@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 2%;
+  height: 100vh;
+  top: 0;
+}
+
+header {
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  height: 100%;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  header ul {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+  }
+  header li {
+    display: flex;
+    list-style: none;
+    width: 10%;
+  }
+  .info_name h3{
+      font-size: 70%;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    header ul {
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1em;
+    }
+    header li {
+      display: flex;
+      list-style: none;
+      width: 10%;
+    }
+    .info_name h3{
+        font-size: 70%;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    header ul {
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1em;
+    }
+    header li {
+      display: flex;
+      list-style: none;
+      width: 10%;
+    }
+    .info_name h3{
+        font-size: 70%;
+        width: 100%;
+    }
+  }
+
+
+header li {
+  list-style: none;
+  width: 15%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.profile {
+  width: 15%;
+  line-height: 160%;
+  margin: 5%;
+  font-size: 80%;
+  height: 7%;
+}
+.info_name{
+    line-height: 20%;
+}
+.info_name p{
+    font-size: 90%;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 1px #f1eded;
+}
+#repo_total{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    top: 2;
+    width: 30%;
+    height: 10px;
+    border: none;
+    box-shadow: 0px 0px 0p 0px;
+    border-radius: 50%;
+    padding: 3%;
+}
+
+#main {
+  width: 85%;
+}
+
+#input_div {
+  width: 95%;
+  box-shadow: 0px 0px 0px 1px #f1eded;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+#main input {
+  width: 85%;
+  height: 25px;
+  padding: 0.456.em;
+  border: none;
+}
+
+#main li {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main li > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+}
+
+#main li > button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+em {
+  padding: 0.524em;
+}
+
+#main button {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
