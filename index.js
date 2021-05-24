@@ -1,7 +1,7 @@
 var TOKEN = process.env.TOKEN;
 
 function myFunction() {
-    let username = document.getElementById("search_term").value;
+
     const body = {
       query: `query {
     user(login:"Teepath" ){
@@ -72,7 +72,7 @@ myFunction()
 
 function getUserRepo(){
  
-  // var TOKEN =process.env.GITHUB_TOKEN;
+
   let username = document.getElementById("search_term").value;
 
  
@@ -168,7 +168,7 @@ const myLoadData = (data) => {
 
 
 const appendToDOM = (res) => {
-  const display = document.getElementById('display');
+
 console.log(res)
   res.map(({ node }) => {
    
@@ -210,7 +210,6 @@ const updateAt = (node) => {
 
 const lang = (node) => {
    const em = document.createElement('em');
-  // em.setAttribute("class", "fas fa-circle");
   em.innerHTML = node.primaryLanguage.name;
   return em;
 }
@@ -220,7 +219,6 @@ const lang = (node) => {
 
 const createDiv = (node) => {
 
-  // li.appendChild(mainInfo)
   const div = document.createElement('div');
   div.style.display = "flex";
   div.style.flexDirection = "column";
@@ -233,7 +231,6 @@ const createDiv = (node) => {
   repo_name.style.fontSize = "90%";
   repo_name.innerHTML = node.name;
   div.append(repo_name, createTag(node));
-  // div.appendChild(createLi(node), buttonTag())
   return div;
 }
 
@@ -243,7 +240,6 @@ const buttonTag = () => {
   button.style.display = "flex";
   button.style.justifyContent = " flex-end";
   button.style.height = "30px"
-  buttonStar = document.createElement('em');
   buttonStar.setAttribute('class', "fas fa-star");
   button.innerHTML = "start";
   button.appendChild(buttonStar)
