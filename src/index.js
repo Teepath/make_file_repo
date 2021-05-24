@@ -1,4 +1,4 @@
-var token = config.token;
+var TOKEN = process.env.TOKEN;
 
 function myFunction() {
     let username = document.getElementById("search_term").value;
@@ -47,7 +47,7 @@ function myFunction() {
     const baseUrl = "https://api.github.com/graphql";
 
     const headers = {
-      Authorization: `${token}`,
+      Authorization: `${TOKEN}`,
     };
 
     axios
@@ -72,7 +72,7 @@ myFunction()
 
 function getUserRepo(){
  
-  // var token =process.env.GITHUB_TOKEN;
+  // var TOKEN =process.env.GITHUB_TOKEN;
   let username = document.getElementById("search_term").value;
 
  
@@ -124,7 +124,7 @@ function getUserRepo(){
   const baseUrl = "https://api.github.com/graphql";
 
   const headers = {
-    Authorization: `${token}`
+    Authorization: `${TOKEN}`
   };
 
   axios
