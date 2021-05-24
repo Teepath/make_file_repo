@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "netlify": "./node_modules/.bin/netlify",
+    "dev": "netlify dev",
     "build": "yarn run build"
   },
   "repository": {
