@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "netlify": "./node_modules/.bin/netlify"
+    "netlify": "./node_modules/.bin/netlify",
+    "build": "yarn build"
   },
   "repository": {
     "type": "git",
